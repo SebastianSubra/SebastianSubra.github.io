@@ -1,0 +1,55 @@
+/* Add your styling for the website here */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.navbar {
+    background-color: #444;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display the navbar items in a row */
+}
+
+.navbar-item {
+    flex: 1; /* Each item takes equal width */
+}
+
+.navbar-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 0;
+    text-decoration: none;
+}
+
+.navbar-item a:hover {
+    background-color: #555;
+    color: black;
+}
+
+.content-section {
+    padding: 20px;
+    flex: 1;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
