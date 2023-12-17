@@ -1,5 +1,3 @@
-/* Adapted styles to the provided CSS structure */
-
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -49,34 +47,10 @@ header {
     flex: 1;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
-/* Style for the homepage */
-.content-section p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #555;
-}
-
-/* Responsive design for smaller screens */
-@media only screen and (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .navbar-item {
-        flex: none;
-    }
-}
-
+/* Style for the topic page */
 .topic-columns {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the columns */
     margin-top: 20px;
 }
 
@@ -85,7 +59,23 @@ footer {
     width: 48%;
 }
 
-.topic-image {
+.divider {
+    width: 2px; /* Set the width of the line */
+    background-color: rgba(0, 0, 0, 0.5); /* Set the color to black */
+    margin: 0 20px; /* Add margin for better spacing */
+}
+
+.section-divider {
+    width: 100%; /* Full width */
+    border-top: 2px solid rgba(0, 0, 0, 0.5); /* Line color and style */
+    margin: 20px 0; /* Margin for better spacing */
+}
+
+.example-description {
+    font-size: 14px; /* Adjust the font size to your preference */
+}
+
+.example-image {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
@@ -93,6 +83,19 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.topic-image:hover {
+.example-image:hover {
     cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Underline tuning types */
+.left-column h2,
+.right-column h2 {
+    text-decoration: underline;
 }
