@@ -8,6 +8,10 @@ body {
     color: #333;
 }
 
+header, .navbar, .content-section, .vertical-form {
+    margin: 0;
+}
+
 header {
     background-color: #333;
     color: white;
@@ -23,6 +27,32 @@ header {
     margin: 0;
     display: flex;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-section {
+    padding: 20px;
+    flex: 1;
+}
+
+.vertical-form {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form label,
+.form input,
+.form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form textarea {
+    resize: vertical;
 }
 
 .navbar-item {
@@ -49,7 +79,7 @@ header {
 
 .topic-columns {
     display: flex;
-    justify-content: center; /* Center the columns */
+    justify-content: space-between;
     margin-top: 20px;
 }
 
@@ -59,27 +89,27 @@ header {
 }
 
 .divider {
-    width: 2px; /* Set the width of the line */
-    background-color: rgba(0, 0, 0, 0.5); /* Set the color to black */
-    margin: 0 20px; /* Add margin for better spacing */
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 20px;
 }
 
 .section-divider {
-    width: 100%; /* Full width */
-    border-top: 2px solid rgba(0, 0, 0, 0.5); /* Line color and style */
-    margin: 20px 0; /* Margin for better spacing */
+    width: 100%;
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
 }
 
 .topic-image,
 .example-description {
-    font-size: 14px; /* Adjust the font size to your preference */
+    font-size: 14px;
 }
 
 .topic-image,
 .example-image,
 .topic-image-aesthetic,
 .tuning-aesthetic-image {
-    max-width: 50%; /* Set max-width to 50% for all images */
+    max-width: 50%;
     height: auto;
     border-radius: 8px;
     margin-top: 20px;
@@ -88,8 +118,6 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 .left-column h2,
 .right-column h2 {
@@ -109,29 +137,101 @@ header {
     margin: 0;
 }
 
-footer {
+.footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 20px; /* Add top margin for better spacing */
+    margin-top: 20px;
 }
 
-
-/* Add a class for tuning aesthetic images */
-
-
 .centered-image {
-    width: 44%; 
+    width: 44%;
     height: 160px;
-    max-height: 180px
+    max-height: 180px;
 }
 
 .tuning-aesthetic-image.centered-image {
-    max-width: 40%; /* Set max-width for smaller size */
-    margin: 20px; /* Add margin for better spacing */
-    display: inline-block; /* Display images inline */
+    max-width: 40%;
+    margin: 20px;
+    display: inline-block;
 }
 
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    color: #333;
+}
 
+header, .navbar, .content-section, .vertical-form, footer {
+    margin: 0;
+}
 
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.navbar {
+    background-color: #555;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ... existing styles ... */
+
+.content-section {
+    padding: 20px;
+    flex: 1;
+}
+
+.vertical-form {
+    text-align: left;
+}
+
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form label,
+.form input,
+.form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form textarea {
+    resize: vertical;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.additional-content {
+    text-align: center;
+}
+
+.additional-content a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.additional-content a:hover {
+    text-decoration: underline;
+}

@@ -17,15 +17,27 @@
         <li class="navbar-item"><a href="net.html">Net</a></li>
         <li class="navbar-item"><a href="topic.html">Topic</a></li>
         <li class="navbar-item"><a href="about.html">About Me</a></li>
-        <li class="navbar-item"><a href="degree.html">Course</a></li>
+        <li class="navbar-item"><a href="degree.html">Degree</a></li>
     </ul>
-    
-    <div class="content-section">
-        <p>This is where your contact form will be placed.</p>
-    </div>
 
-    <footer>
-        <p>Your Contact Information</p>
-    </footer>
+    <div class="content-section">
+        <div class="vertical-form">
+            <form class="form">
+                <label for="nombre">Name:</label>
+                <input type="text" name="nombre" placeholder="Your name" required>
+              
+                <label for="apellido">Surname:</label>
+                <input type="text" name="apellido" placeholder="Your surname" required>
+              
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="youremail@gmail.com" required>
+              
+                <label for="mensaje">Message:</label>
+                <textarea name="mensaje" placeholder="Your message here" rows="4" required></textarea>
+              
+                <button type="submit">Send</button>
+            </form>
+         </div>
+    </div>
 </body>
 </html>
