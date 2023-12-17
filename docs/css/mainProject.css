@@ -1,4 +1,4 @@
-/* Add your styling for the website here */
+/* Adapted styles to the provided CSS structure */
 
 body {
     margin: 0;
@@ -6,6 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 header {
@@ -16,16 +18,17 @@ header {
 }
 
 .navbar {
-    background-color: #444;
+    background-color: #555;
     overflow: hidden;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Display the navbar items in a row */
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-item {
-    flex: 1; /* Each item takes equal width */
+    flex: 1;
 }
 
 .navbar-item a {
@@ -34,11 +37,11 @@ header {
     text-align: center;
     padding: 14px 0;
     text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar-item a:hover {
-    background-color: #555;
-    color: black;
+    background-color: #777;
 }
 
 .content-section {
@@ -47,9 +50,49 @@ header {
 }
 
 footer {
-    background-color: #444;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 15px;
 }
 
+/* Style for the homepage */
+.content-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive design for smaller screens */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-item {
+        flex: none;
+    }
+}
+
+.topic-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left-column,
+.right-column {
+    width: 48%;
+}
+
+.topic-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.topic-image:hover {
+    cursor: pointer;
+}
