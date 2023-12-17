@@ -93,6 +93,19 @@ header {
     text-decoration: underline;
 }
 
+.image-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.image-source,
+.reference {
+    margin: 0;
+}
+
 footer {
     background-color: #333;
     color: white;
