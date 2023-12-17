@@ -76,17 +76,20 @@ header {
 }
 
 .topic-image,
-.example-image {
-    max-width: 100%;
+.example-image,
+.topic-image-aesthetic,
+.tuning-aesthetic-image {
+    max-width: 50%; /* Set max-width to 50% for all images */
     height: auto;
     border-radius: 8px;
     margin-top: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.example-image:hover {
-    cursor: pointer;
-}
+
 
 .left-column h2,
 .right-column h2 {
@@ -113,3 +116,22 @@ footer {
     padding: 15px;
     margin-top: 20px; /* Add top margin for better spacing */
 }
+
+
+/* Add a class for tuning aesthetic images */
+
+
+.centered-image {
+    width: 44%; 
+    height: 160px;
+    max-height: 180px
+}
+
+.tuning-aesthetic-image.centered-image {
+    max-width: 40%; /* Set max-width for smaller size */
+    margin: 20px; /* Add margin for better spacing */
+    display: inline-block; /* Display images inline */
+}
+
+
+
