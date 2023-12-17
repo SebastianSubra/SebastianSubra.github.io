@@ -47,7 +47,6 @@ header {
     flex: 1;
 }
 
-/* Style for the topic page */
 .topic-columns {
     display: flex;
     justify-content: center; /* Center the columns */
@@ -71,10 +70,12 @@ header {
     margin: 20px 0; /* Margin for better spacing */
 }
 
+.topic-image,
 .example-description {
     font-size: 14px; /* Adjust the font size to your preference */
 }
 
+.topic-image,
 .example-image {
     max-width: 100%;
     height: auto;
@@ -87,15 +88,15 @@ header {
     cursor: pointer;
 }
 
+.left-column h2,
+.right-column h2 {
+    text-decoration: underline;
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 15px;
-}
-
-/* Underline tuning types */
-.left-column h2,
-.right-column h2 {
-    text-decoration: underline;
+    margin-top: 20px; /* Add top margin for better spacing */
 }
