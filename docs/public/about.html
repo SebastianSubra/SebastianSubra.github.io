@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="../css/mainProject.css">
+    <style>
+        body {
+            background-image: url('your-background-image.jpg'); /* Add your background image URL */
+            background-size: cover;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .centered-box {
+            background-color: #555; /* Grey background for the text box */
+            border-radius: 15px; /* Rounded corners for the text box */
+            padding: 20px;
+            text-align: center;
+            width: 70%;
+            margin: 50px auto; /* Center the box and adjust margin as needed */
+        }
+
+        .corner-image {
+            width: 100px; /* Adjust size as needed */
+            height: 100px; /* Adjust size as needed */
+            border-radius: 50%; /* Make the corners round */
+            margin: 10px;
+        }
+
+        .top-left { float: left; }
+        .top-right { float: right; }
+    </style>
 </head>
 <body>
     <header>
@@ -19,9 +50,16 @@
         <li class="navbar-item"><a href="about.html">About Me</a></li>
         <li class="navbar-item"><a href="degree.html">Degree</a></li>
     </ul>
-    
-    <div class="content-section">
-        <p>This is where you include a brief description about yourself, your curriculum vitae, images, and links to your social media accounts.</p>
+
+    <img src="../images/selfie.jpg" alt="Corner Image" class="corner-image top-left">
+    <img src="../images/dogo.jpg" alt="Corner Image" class="corner-image top-right">
+
+    <div class="centered-box">
+        <!-- Add your paragraphs here -->
+        <p>
+            My name is Sebastiá Subra, and I am Spanish. I was born and raised in Brussels until I arrived at UFV. I came to Madrid alone with my father and dog. I studied in the European School of Brussels and also in the International School of Brussels. I enjoy cars, video games, and funny videos.
+        </p>
+        <!-- Add your list of subjects here -->
     </div>
 
     <footer>
